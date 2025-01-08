@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int arr[201];
+
+int main() {
+	ios::sync_with_stdio(false);
+	cin.tie(0); cout.tie(0);
+
+	int n, v, tmp;
+	cin >> n;
+	for (int i = 0; i < n; i++) {
+		cin >> tmp;
+		if (tmp < 0) {
+			arr[tmp + 201]++;
+		}
+		else arr[tmp]++;
+	}
+	cin >> v;
+	if (v < 0) {
+		cout << arr[v + 201];
+	}
+	else cout << arr[v];
+}
