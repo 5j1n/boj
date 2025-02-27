@@ -8,6 +8,7 @@ long long arr[1001], dp[1001];
 int main() {
 	long long n;
 	cin >> n;
+	
 	for (long long i = 1; i <= n; i++) {
 		cin >> arr[i];
 		dp[i] = INT_MAX;
